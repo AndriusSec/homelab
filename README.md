@@ -50,5 +50,6 @@ Automatizacija ir IaC
     Cloud-init — automatinis pradinis VM paruošimas (SSH raktai, tinklo nustatymai, hostname) diegimo metu, be rankinio įsikišimo
 
 Konteinerizacija
+
 Visos paslaugos šiame home lab'e diegiamos ir valdomos per Docker Compose YAML failus. Portainer naudojamas kaip centralizuota valdymo sąsaja visiems konteineriams, veikiantiems skirtingose VM/LXC visame tinkle.
 
