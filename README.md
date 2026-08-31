@@ -5,8 +5,7 @@ Homelab infrastruktūra
 Savarankiškai administruojama namų laboratorija, pastatyta ant Proxmox VE hipervizoriaus, su tinklo segmentacija, automatizuota infrastruktūros valdymu ir pilnu observability stack'u. Visos paslaugos diegiamos ir valdomos per Docker Compose, infrastruktūra kuriama ir palaikoma Infrastructure as Code principais.
 
 Architektūra
-
-(Nuotrauka)
+https://github.com/AndriusSec/homelab/blob/main/homelab-scheme.png
 
 Host'inamų paslaugų apžvalga
 | Kategorija             | Technologija           | Paskirtis                                                                            |
