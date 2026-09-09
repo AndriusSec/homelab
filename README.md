@@ -35,7 +35,7 @@ Tinklas suskirstytas į izoliuotus VLAN segmentus pagal pasitikėjimo lygį t.y.
 
 Nuotolinis valdymas
 
-Visas nuotolinis prisijungimas prie namų infrastruktūros vyksta per Netbird VPN, nėra jokių tiesiogiai atvertų valdymo portų (SSH, RDP) į viešą internetą. Netbird control plane veikia DMZ segmente už reverse proxy, o routing peer'as užtikrina saugų maršrutą į vidinius VLAN segmentus, nepažeidžiant esamos tinklo segmentacijos.
+Nuotolinis prisijungimas prie namų infrastruktūros vyksta per Netbird VPN, nėra jokių tiesiogiai atvertų valdymo portų (SSH, RDP) į viešą internetą. Vieninteliai iš išorės pasiekiami portai — 80, 443 ir 3478 yra atverti į DMZ segmente esančią Nginx Proxy Manager virtualią mašiną, kuri veikia kaip vienintelis įėjimo taškas iš viešo interneto. Iš ten NPM atlieka port forward į Netbird konteinerį (control panel), o routing peer'as užtikrina saugų maršrutą į vidinius VLAN segmentus.
 
 Monitoring'as
 
@@ -53,5 +53,5 @@ Automatizacija ir IaC
 
 Konteinerizacija
 
-Visos paslaugos šiame home lab'e diegiamos ir valdomos per Docker Compose YAML failus. Portainer naudojamas kaip centralizuota valdymo sąsaja visiems konteineriams, veikiantiems skirtingose VM/LXC visame tinkle.
+Visos paslaugos homelab'e diegiamos ir valdomos per docker-compose YAML failus. Portainer naudojamas kaip centralizuota valdymo sąsaja visiems konteineriams, veikiantiems skirtingose VM/LXC konteineriuose visame tinkle.
 
