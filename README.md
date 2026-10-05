@@ -39,7 +39,7 @@ Nuotolinis prisijungimas prie namų infrastruktūros vyksta per Netbird VPN, nė
 
 Monitoring'as
 
-Pilnas monitoring'o stack'as, veikiantis per Docker Compose:
+Pilnas monitoring'o stack'as, veikiantis per docker-compose:
 
     Grafana — vizualizacija ir dashboard'ai
     Loki — logų agregavimas iš visų konteinerių ir VM
